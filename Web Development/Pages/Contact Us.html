@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us - Bookspot</title>
+	<meta name="Rohit Ratna Shakya" content="Contact Us Page">
+	<link rel="stylesheet" type="text/css" href="../css/Index.css">
+	
+	<style type="text/css">
+		.Main
+		{
+			margin-top: 10px;
+			margin-left: 23px;
+			margin-right: 10px;
+			height: 700px;
+			width: 83%;
+			padding-top: 10px;
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+
+		.main1
+		{
+			float: left;
+			height: 700px;
+			width: 35%;
+			background-color: #C0A080;
+			border-radius: 14px;
+		}
+
+		.main11
+		{
+			background-color: #C0A080;
+			margin-top: 40px;
+			margin-left: 90px;
+			color: #393E46;
+
+		}
+			
+		.main2
+		{
+			float: right;
+			height: 700px;
+			width: 62.5%;
+			background-color: #C3B091;
+			border-radius: 14px;
+		}
+
+		.main22
+		{
+			background-color: #C3B091;
+			margin-top: 40px;
+			margin-left: 90px;
+			color: #393E46;
+			font-size: 18px;
+		}
+
+		input[type=text]
+		{
+    		width: 20%;
+    		padding: 5px;
+    		text-align: left;
+    		border-radius: 5px;
+		}
+
+		textarea
+		{
+			border-radius: 5px;
+		}
+
+		input[type=submit]
+		{
+   			width: 20%;
+    	  	margin-top: 15px;
+    		padding: 10px;
+    		font-size: 16px;
+    		color: #F4DFBA;
+    		background-color: #393E46;
+    		border-radius: 15px;
+		}
+
+		input[type=submit]:hover
+		{
+   			background-color: #6B4F4F;
+    		transition: 0.2s;
+    	}
+
+
+	</style>
+</head>
+<body bgcolor="#F4DFBA">
+	<!--  Here is the division for the Navigation Bar in the webpage  -->
+	<div class="Navbar">
+
+		<div class="Logo">
+			<a href="../index.html">
+				<img src="../Image/Booklogo.png" width="120px">
+			</a>
+		</div>
+
+
+		<nav>
+			<ul>
+				<li> <a href="../index.html">Home</a> </li>
+				<li> <a href="Product.html">Product</a> </li>
+				<li> <a href="Blog.html">Blog</a> </li>
+				<li> <a href="Research.html">Research</a> </li>
+				<li> <a href="Contact Us.html">Contact Us</a> </li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<!--  This is the main division of the body section-->
+	<div class="Main">
+
+		<!--  This is the left sided division where few information of store are displayed-->
+		<div class="main1">
+
+			<div class="main11">
+				<p>
+					<h1>Find Us</h1>
+
+						<br><br>
+
+					<h3>
+				 		bookspot@gmail.com<br>
+						9845321458
+					</h3>
+
+						<br><br><br>
+
+					<h3>
+						Tangal, Naxal Marg<br>
+						Kathmandu, Nepal
+					</h3>
+
+						<br><br><br><br>
+
+					<h2> Connect With Us </h2>
+					
+						<br>
+
+		                    <a href="https://www.instagram.com" style="text-decoration: none;">
+		                           <img src="../Image/Instagram.png" style="width: 30px;"> 
+		                    </a>
+
+		                    
+
+		                    <a href="https://www.facebook.com" style="text-decoration: none;">
+		                           <img src="../Image/Facebook.png" style="width: 50px; height: 30px;">
+		                    </a>
+
+		                   
+
+		                    <a href="https://twitter.com" style="text-decoration: none;">
+		                           <img src="../Image/Twitter.png" style="width: 30px;">
+		                    </a> 
+
+		                  
+
+		                    <a href="https://youtube.com" style="text-decoration: none;">
+		                           <img src="../Image/Youtube.png" style="width: 50px; height: 30px;">
+		                    </a>
+				</p>
+			</div>
+				
+		</div>
+
+		<!--  This is the right sided division where the feedback form is kept-->
+		<div class="main2">
+			<div class="main22">
+				<h1>Contact Us Today</h1>
+		
+					<br><br>
+
+				<form name="check" onsubmit="validateform()">
+
+					<p>
+						<h3>Your Name</h3>
+						<input type="text" name="First Name" placeholder="First Name">	
+						<input type="text" name="Last Name" placeholder="Last Name">
+					</p>
+
+						<br>
+			
+					<p>
+						<h3>Gender</h3>
+						<input type="radio" name="Gender" value="male">Male
+						<input type="radio" name="Gender" value="female">Female
+					</p>
+
+						<br>
+
+					<p>
+						<h3>Your Phone Number</h3>
+						<input type="text" name="PHnumber" placeholder="Phone Number">
+					</p>
+
+						<br>
+
+					<p>
+						<h3>Your E-mail Address</h3>
+						<input type="text" name="e-mail" placeholder="E-mail">
+					</p>
+
+						<br>
+
+					<p>
+						<h3>Your Queries</h3>
+					</p>
+					
+						<textarea name="Comment" rows="10" cols="45" placeholder="Write Your Queries here..."></textarea>
+
+						<br>
+
+					<p>
+						<input type="submit" value="Submit">
+					</p>
+		
+				</form>
+
+				<!--  This is the java script for the form in the division-->
+				<script type="text/javascript">
+					function validateform()
+					{
+						var fname = document.forms["check"]["First Name"].value;
+						var lname = document.forms["check"]["Last Name"].value;
+						var gender = document.forms["check"]["Gender"].value;
+						var phnumber = document.forms["check"]["PHnumber"].value;
+						var email = document.forms["check"]["e-mail"].value;
+						var comment = document.forms["check"]["Comment"].value;
+
+						if(fname=="" || lname=="")
+						{
+							alert("Please enter Your Name");
+						}
+						else if(gender=="")
+						{
+							alert("Please select your Gender");
+						}
+
+						else if(phnumber=="")
+						{
+							alert("Fill in your Phone Number")
+						}
+						else if(email=="")
+						{
+							alert("Please enter your E-mail ID")
+						}
+						else if(fname.length>4 && lname.length>4 && email.length>9)
+						{
+							alert("Thank You for the Feedback");
+						}
+					}
+				</script>
+			</div>			
+		</div>
+	</div>
+
+	<!--  This is the division for the Footer section  -->
+	<div class="Footer">
+		<p class="footer1">
+			&copy:bookspot<br>
+			We are registered at LMU
+		</p>
+	</div>
+</body>
+</html>

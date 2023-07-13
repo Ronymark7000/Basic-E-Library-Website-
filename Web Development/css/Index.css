@@ -1,0 +1,66 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: Script MT Bold;
+}
+
+/* This css is for the styling of the  website logo */
+.Logo
+{
+	text-align: center;
+}
+
+/* This css is for the styling for the navigation bar in the header section of the website */
+ul
+{
+	text-align: center;
+	list-style-type: none;
+}
+
+ul li
+{
+	display: inline-block;
+	margin-top: 10px;
+	
+}
+
+ul li a 
+{
+	font-size: 25px;
+	text-decoration: none;
+	padding: 1px;
+	color: #876445;
+	border-color: #F4DFBA;
+	margin-right: 10px;
+	margin-left: 10px;	
+	transition: 0.5s ease;
+}
+
+ul li a:hover
+{
+	background-color: #d9b38c;
+	border-radius: 8px;
+}
+
+/* This css is for the styling of the footer section in the webpage*/
+.Footer
+{
+	margin-top: 20px;
+	height: 100px;
+	width: 100%;
+	background-color:#393E46;
+}
+
+.footer1
+{
+	position: relative;
+	top: 20%;
+	margin-left: 1300px;
+	margin-right: 15px;
+	padding: 10px;
+	font-size: 15px;
+	text-align: right;
+	background-color: #393E46;
+	color: #F4DFBA; 
+}
